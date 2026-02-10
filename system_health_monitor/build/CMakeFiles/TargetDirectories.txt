@@ -1,0 +1,3 @@
+/home/dcv_user/Source/system_health_monitor/build/CMakeFiles/application.elf.dir
+/home/dcv_user/Source/system_health_monitor/build/CMakeFiles/edit_cache.dir
+/home/dcv_user/Source/system_health_monitor/build/CMakeFiles/rebuild_cache.dir
