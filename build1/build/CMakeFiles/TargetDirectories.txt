@@ -1,0 +1,3 @@
+/home/dcv_user/cortex_r52_calc/build/CMakeFiles/application.elf.dir
+/home/dcv_user/cortex_r52_calc/build/CMakeFiles/edit_cache.dir
+/home/dcv_user/cortex_r52_calc/build/CMakeFiles/rebuild_cache.dir
