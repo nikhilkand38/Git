@@ -1,13 +1,13 @@
 #include "winAMS_Spmc.h"
 
-#line 4 "C:\\Users\\winams_user\\Favorites\\Documents\\Git\\cortex_r52_calc\\cortex_r52_calc\\APP\\inc\\app.h"
+#line 4 "D:\\winams-1\\cortex_r52_calc\\cortex_r52_calc\\APP\\inc\\app.h"
 void App_Run(void);
-#line 4 "C:\\Users\\winams_user\\Favorites\\Documents\\Git\\cortex_r52_calc\\cortex_r52_calc\\BSP\\inc\\uart.h"
+#line 4 "D:\\winams-1\\cortex_r52_calc\\cortex_r52_calc\\BSP\\inc\\uart.h"
 void uart_init(void);
 void uart_putc(char c);
 void uart_puts(const char *s);
 void uart_putnum(int num);
-#line 12 "C:\\Users\\winams_user\\Favorites\\Documents\\Git\\cortex_r52_calc\\cortex_r52_calc\\SERVICES\\inc\\calc_service.h"
+#line 12 "D:\\winams-1\\cortex_r52_calc\\cortex_r52_calc\\SERVICES\\inc\\calc_service.h"
 typedef struct {
 int a;
 int b;
@@ -21,7 +21,7 @@ int div;
 } Calc_OutputType;
 #line 29
 void Calc_Service_Run(const Calc_InputType *input, Calc_OutputType *output);
-#line 5 "C:\\Users\\winams_user\\Favorites\\Documents\\Git\\cortex_r52_calc\\cortex_r52_calc\\APP\\src\\app.c"
+#line 5 "D:\\winams-1\\cortex_r52_calc\\cortex_r52_calc\\APP\\src\\app.c"
 void App_Run(void)
 {
 Calc_InputType input;

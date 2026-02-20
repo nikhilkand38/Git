@@ -1,6 +1,6 @@
 #include "winAMS_Spmc.h"
 
-#line 12 "C:\\Users\\winams_user\\Favorites\\Documents\\Git\\cortex_r52_calc\\cortex_r52_calc\\SERVICES\\inc\\calc_service.h"
+#line 12 "D:\\winams-1\\cortex_r52_calc\\cortex_r52_calc\\SERVICES\\inc\\calc_service.h"
 typedef struct {
 int a;
 int b;
@@ -14,7 +14,7 @@ int div;
 } Calc_OutputType;
 #line 29
 void Calc_Service_Run(const Calc_InputType *input, Calc_OutputType *output);
-#line 4 "C:\\Users\\winams_user\\Favorites\\Documents\\Git\\cortex_r52_calc\\cortex_r52_calc\\SERVICES\\src\\calc_service.c"
+#line 4 "D:\\winams-1\\cortex_r52_calc\\cortex_r52_calc\\SERVICES\\src\\calc_service.c"
 static int add_i(int a, int b) {WinAMS_SPMC_C0("calc_service.c/add_i",4); return a + b; }
 static int sub_i(int a, int b) {WinAMS_SPMC_C0("calc_service.c/sub_i",5); return a - b; }
 static int mul_i(int a, int b) {WinAMS_SPMC_C0("calc_service.c/mul_i",6); return a * b; }

@@ -1,11 +1,11 @@
 #include "winAMS_Spmc.h"
 
-#line 4 "C:\\Users\\winams_user\\Favorites\\Documents\\Git\\cortex_r52_calc\\cortex_r52_calc\\BSP\\inc\\uart.h"
+#line 4 "D:\\winams-1\\cortex_r52_calc\\cortex_r52_calc\\BSP\\inc\\uart.h"
 void uart_init(void);
 void uart_putc(char c);
 void uart_puts(const char *s);
 void uart_putnum(int num);
-#line 10 "C:\\Users\\winams_user\\Favorites\\Documents\\Git\\cortex_r52_calc\\cortex_r52_calc\\BSP\\src\\uart.c"
+#line 10 "D:\\winams-1\\cortex_r52_calc\\cortex_r52_calc\\BSP\\src\\uart.c"
 void uart_init(void)
 {
 WinAMS_SPMC_C0("uart_init",12),(*(volatile unsigned int *)(0xE7C00000ul + 0x08)) = 0;
