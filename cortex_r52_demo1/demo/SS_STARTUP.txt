@@ -1,0 +1,6 @@
+start log/all
+on error then continue
+set unit/all
+;@reset
+;set mode source
+direct set fp dp

@@ -1,0 +1,17 @@
+[AUTO_TEST]
+Out_Set=0
+Out_Int=0
+Out_Bit=0
+Out_Float=0.0
+Out_Point=0
+Init_Form=0
+In_Set=1
+In_Int=0
+In_Bit=0
+In_Float=0.0
+Combinate_Mode=0
+AllExps=1
+Stub_Use=1
+Csv_Name_Len=30
+AllSubFunc=0
+CsvFileName_Type=0

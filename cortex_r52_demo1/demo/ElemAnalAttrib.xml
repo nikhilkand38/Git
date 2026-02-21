@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ElemAttribRoot ElemAttribXmlVer="1.0">
+  <ElemAttribBlocks DefAttribCount="11" UsrAttribCount="0">
+    <DefElemAttrib ID="1" RGB="13434828"></DefElemAttrib>
+    <DefElemAttrib ID="2" RGB="13434828"></DefElemAttrib>
+    <DefElemAttrib ID="3" RGB="13434828"></DefElemAttrib>
+    <DefElemAttrib ID="4" RGB="39423"></DefElemAttrib>
+    <DefElemAttrib ID="5" RGB="10092543"></DefElemAttrib>
+    <DefElemAttrib ID="6" RGB="16777215"></DefElemAttrib>
+    <DefElemAttrib ID="7" RGB="16777215"></DefElemAttrib>
+    <DefElemAttrib ID="8" RGB="16777215"></DefElemAttrib>
+    <DefElemAttrib ID="9" RGB="16777215"></DefElemAttrib>
+    <DefElemAttrib ID="10" RGB="13434828"></DefElemAttrib>
+    <DefElemAttrib ID="11" RGB="13434828"></DefElemAttrib>
+  </ElemAttribBlocks>
+</ElemAttribRoot>
