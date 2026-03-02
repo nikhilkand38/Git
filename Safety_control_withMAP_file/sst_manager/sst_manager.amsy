@@ -1,5 +1,5 @@
 [System_G]
-CurrentFolder=C:\winams1\demo\Safety_control_withMAP_file\sst_manager
+CurrentFolder=C:\Users\user_kpit\Downloads\New folder\Git\Safety_control_withMAP_file\sst_manager
 ObjectFile=..\cortex_r52_demo_elf\build\safety_controller.elf.xlo
 Start=.\SS_STARTUP.txt
 SystemGOption=
@@ -104,7 +104,9 @@ ShowSubCsv=0
 ActiveTestPs=0
 FocusSrcName=
 ClsMemShowMode=0
-SrcPathCvtNo=0
+SrcPathCvtNo=1
+SrcPathCvtFrom0=C:\winams1\demo
+SrcPathCvtTo0=C:\Users\user_kpit\Downloads\New folder\Git
 NoSetPath=0
 NoCheckToOK=1
 OutDataHex=0
