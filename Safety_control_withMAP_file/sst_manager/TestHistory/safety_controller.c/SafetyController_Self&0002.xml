@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmsProj ProjPath="..\..\sst_manager.amsy" ResultXmlVer="v1.0">
+  <Module Name="SafetyController_SelfTest" EncodeName="SafetyController_SelfTest" SourceFile="safety_controller.c" HasC1Cov="1" HasMCDC="1" HasCallCov="0" HasCovLog="1" CountResultCSV="2">
+    <C0Cov Denominator="4" Numerator="4">100</C0Cov>
+    <C1Cov Denominator="2" Numerator="2">100</C1Cov>
+    <MCDC Denominator="1" Numerator="1">100</MCDC>
+    <CovLog>..\..\Out2026-03-02(23'27'08)\TestCoverLog\safety_controller.c\SafetyController_Self&amp;0002.txt</CovLog>
+    <TestTime>2026/03/03 02:38:25</TestTime>
+    <CsvOutPutDir>..\..\Out2026-03-02(23'27'08)</CsvOutPutDir>
+    <ResultCSV CsvEvidence="..\..\Out2026-03-02(23'27'08)\SafetyController_SelfTest_Table.html" Path="..\..\Out2026-03-02(23'27'08)\SafetyController_SelfTest.csv" TestMain="1" HasMatch="0">
+      <OKNG>1</OKNG>
+      <TestCase>2</TestCase>
+      <TestPerson></TestPerson>
+    </ResultCSV>
+    <ResultCSV CsvEvidence="..\..\Out2026-03-02(23'27'08)\demo_func1_Table.html" Path="..\..\Out2026-03-02(23'27'08)\demo_func1.csv" TestMain="0" HasMatch="0">
+      <OKNG>1</OKNG>
+      <TestCase>9</TestCase>
+      <TestPerson></TestPerson>
+    </ResultCSV>
+  </Module>
+</AmsProj>

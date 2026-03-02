@@ -1,0 +1,17 @@
+".\\Source\\safety_controller.c"
+"SafetyController"	41,86
+	2	43 "SafetyOutput out;"
+	3	55 "selftest_result = SafetyController_SelfTest(sensorOK);"
+	4	56 "(void)selftest_result;"
+	5	59 "spd   = clamp_int(speed,     -1000000, 1000000);"
+	6	60 "limit = clamp_int(maxSpeed,  -1000000, 1000000);"
+	7	61 "tq    = clamp_int(torqueCmd, -1000000, 1000000);"
+	8	64
+	9	65 "out.faultActive = 1;"
+	10	68 "return out;"
+	11	72
+	12	73 "out.faultActive = 1;"
+	13	77
+	14	78 "out.safeSpeed = spd;"
+	15	81 "out.safeSpeed = spd;"
+	16	85 "return out;"

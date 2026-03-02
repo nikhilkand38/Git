@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<DisassembleSaveInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EmbedSymbolCheck>true</EmbedSymbolCheck>
+  <DebugModeCheck>false</DebugModeCheck>
+  <DebugMode>0</DebugMode>
+</DisassembleSaveInfo>

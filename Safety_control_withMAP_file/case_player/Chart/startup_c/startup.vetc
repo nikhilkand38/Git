@@ -1,0 +1,16 @@
+[HD]
+CASE_B  V1.2
+LINK    0
+[FILE]
+1 ".\Source\startup.c"
+[CLASS]
+[MEMBER]
+[FUNC]
+D 1,,"_start",,".\Source\startup.c",2,,extern,,,,"void ()",,131090,,,
+d 1,,"main",,".\Source\startup.c",3,,extern,,,,"int ()",,131072,,,
+R ".\Source\startup.c",4,,module,"_start",33,,,,
+[VAR]
+[CONST]
+[TYPE]
+[ASM]
+[DEFINE]

@@ -1,0 +1,147 @@
+HEADER{
+	VERSION = 4
+	TOOL_VERSIOIN = 10.1
+	NAME = case_player
+	KIND = 1
+	COPYSRC = 1
+	ASM_TYPE = 0
+	ASM_EXT = .xas
+	REMARK = 
+	OPTPARAM_A = .\case_player.rev
+	OPTPARAM_C = .\case_player.rvc
+	SRCFULL = 0
+	CHART_FLAG = 2
+	CHART_TIME = 2026/03/02 23:23:06
+	SRC_REV = 0
+	AMS_INFO_ONLY_BROWSER = 0
+	NEXT_SRCID = 3
+	MISRA_FLAG = 0
+	MISRA_TIME = 1971/01/01 00:00:00
+	SRC_MISRA = 1
+	NEED_REBUILD_TIME = 2026/03/02 23:21:20
+	HTML = 
+	WORD = 
+	CURWORD = 
+	ENABLE_SUBFOLDER = 0
+	MPU_FIXEDNAME = CortexR52
+	COMPILER_FIXEDNAME = armclang
+	IGNORE_LINE = 0
+	WINAMS_SPMC_C = .\Source\Source\winAMS_Spmc.c
+	WINAMS_SPMC_H = .\Source\Source\winAMS_Spmc.h
+	WINAMS_SPMCDEFINE_H = .\Source\Source\winAMS_SpmcDefine.h
+	C_TYPE = 0
+	C_SRC_EXT = .c.i
+	C_HEAD_EXT = .h
+	CPP_MODE = 0
+	CPP_TYPE = 0
+	CPP_SRC_EXT = .cpp.cxx.cc.c++
+	CPP_HEAD_EXT = .hpp.hxx.hh.h++
+	MCDC_OPTIMIZE = 1
+	CP2InlineKeyword = inline;__inline;__inline__
+	CP2PragmaInlineArg = 0
+	CP2PragmaInlineStartEnd = 0
+	CPP_KIND = 0
+}
+SRCLIST{
+	SRC{
+		ID = 2
+		SRC_KIND = 0
+		FROMEPATH = C:\winams1\demo\Safety_control_withMAP_file\cortex_r52_demo_elf\src\startup.c
+		RELPATH = .\Source\startup.c
+		CHART_FLAG = 1
+		CHART_TIME = 2026/03/02 23:23:06
+		MISRA_TIME = 
+		CHART_RELDIR = startup_c
+		HTML = 
+		WORD = 
+	MISRA_FLAG = 0
+		PREPRO_OUT = 
+		MODULE_STCT = startup.vblk
+		MODULE_LIST = startup.vmlt
+		SEARCH_DATA = 
+		NEWBROWS = startup.vetc
+		NEWBROWS_XCCPPV = 
+		GENERAL = 
+		SPMC_SRC_PATH = .\Source\Source\startup.c
+		SPMC_GENERAL = 
+		VAR_LIST = startup.vetv
+		TYPE_LIST = startup.vett
+		DEFINE_LIST = startup.vetdef
+	PREPRO_TIME = 1979/11/30 00:00:00
+	SPMC_DISABLE = 0
+	SPMC_UPDATE = 0
+	USE_PCH = 1
+	}
+	SRC{
+		ID = 1
+		SRC_KIND = 1
+		FROMEPATH = C:\winams1\demo\Safety_control_withMAP_file\cortex_r52_demo_elf\src\safety_controller.h
+		RELPATH = .\Source\safety_controller.h
+		CHART_FLAG = 1
+		CHART_TIME = 2026/03/02 23:23:06
+		MISRA_TIME = 
+		CHART_RELDIR = safety_controller_h
+		HTML = 
+		WORD = 
+	MISRA_FLAG = 0
+		PREPRO_OUT = 
+		MODULE_STCT = 
+		MODULE_LIST = 
+		SEARCH_DATA = 
+		NEWBROWS = 
+		NEWBROWS_XCCPPV = 
+		GENERAL = 
+		SPMC_SRC_PATH = 
+		SPMC_GENERAL = 
+		VAR_LIST = 
+		TYPE_LIST = 
+		DEFINE_LIST = 
+	PREPRO_TIME = 1979/11/30 00:00:00
+	SPMC_DISABLE = 0
+	SPMC_UPDATE = 0
+	USE_PCH = 1
+	}
+	SRC{
+		ID = 0
+		SRC_KIND = 0
+		FROMEPATH = C:\winams1\demo\Safety_control_withMAP_file\cortex_r52_demo_elf\src\safety_controller.c
+		RELPATH = .\Source\safety_controller.c
+		CHART_FLAG = 1
+		CHART_TIME = 2026/03/02 23:23:06
+		MISRA_TIME = 
+		CHART_RELDIR = safety_controller_c
+		HTML = 
+		WORD = 
+	MISRA_FLAG = 0
+		PREPRO_OUT = 
+		MODULE_STCT = safety_controller.vblk
+		MODULE_LIST = safety_controller.vmlt
+		SEARCH_DATA = 
+		NEWBROWS = safety_controller.vetc
+		NEWBROWS_XCCPPV = 
+		GENERAL = 
+		SPMC_SRC_PATH = .\Source\Source\safety_controller.c
+		SPMC_GENERAL = 
+		VAR_LIST = safety_controller.vetv
+		TYPE_LIST = safety_controller.vett
+		DEFINE_LIST = safety_controller.vetdef
+	PREPRO_TIME = 1979/11/30 00:00:00
+	SPMC_DISABLE = 0
+	SPMC_UPDATE = 0
+	USE_PCH = 1
+	}
+}
+CHARTLIST{
+	MODULE_LIST = .\Chart\ChartList\case_player.vmlt
+	STRUCT_LIST = .\Chart\ChartList\case_player.vdlt
+	MODULE_STCT = .\Chart\ChartList\case_player.vblk
+	SEARCH_DATA = 
+	VAR_LIST = .\Chart\ChartList\case_player.vvlt
+	TYPE_LIST = .\Chart\ChartList\case_player.vtlt
+	DEFINE_LIST = .\Chart\ChartList\case_player.vdeflt
+	NEWBROWS = .\case_player.vetm
+	GENERAL = 
+	SPMC_GENERAL = 
+}
+MISRA{
+}

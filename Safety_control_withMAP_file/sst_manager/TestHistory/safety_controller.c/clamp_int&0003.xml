@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmsProj ProjPath="..\..\sst_manager.amsy" ResultXmlVer="v1.0">
+  <Module Name="safety_controller.c/clamp_int" EncodeName="safety_controller.c/clamp_int" SourceFile="safety_controller.c" HasC1Cov="1" HasMCDC="1" HasCallCov="0" HasCovLog="1" CountResultCSV="1">
+    <C0Cov Denominator="5" Numerator="3">60</C0Cov>
+    <C1Cov Denominator="4" Numerator="2">50</C1Cov>
+    <MCDC Denominator="2" Numerator="0">0</MCDC>
+    <CovLog>..\..\Out2026-03-02(23'27'08)\TestCoverLog\safety_controller.c\clamp_int&amp;0003.txt</CovLog>
+    <TestTime>2026/03/03 02:38:25</TestTime>
+    <CsvOutPutDir>..\..\Out2026-03-02(23'27'08)</CsvOutPutDir>
+    <ResultCSV CsvEvidence="..\..\Out2026-03-02(23'27'08)\demo_func1_Table.html" Path="..\..\Out2026-03-02(23'27'08)\demo_func1.csv" TestMain="0" HasMatch="0">
+      <OKNG>1</OKNG>
+      <TestCase>9</TestCase>
+      <TestPerson></TestPerson>
+    </ResultCSV>
+  </Module>
+</AmsProj>

@@ -1,0 +1,24 @@
+Function name           : SafetyController_SelfTest 
+Source file name        : C:\winams1\demo\Safety_control_withMAP_file\case_player\Source\safety_controller.c 
+C0 Coverage rate        : 100%
+C1 Coverage rate        : 100%
+MC/DC Coverage rate     : 100%
+Test time               : 2026/03/03 02:38:25
+
+------ ----- -------- ------   -----------------------------------------
+Un-exe Exec   C1       Count     SOURCE 
+------ ----- -------- ------   -----------------------------------------
+                                   Verify sensors, ranges, and configuration.
+                                */
+                                int SafetyController_SelfTest(int simulatedSensor)
+                                {
+                                    int result;
+                                
+         O    T/F         11        if (simulatedSensor == 1) {
+                                [MC/DC t/f] simulatedSensor==1
+         O                 8            result = 1;
+                                    } else {
+         O                 3            result = 0;
+                                    }
+         O                11        return result;
+                                }

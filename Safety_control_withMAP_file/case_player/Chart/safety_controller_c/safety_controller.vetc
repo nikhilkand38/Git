@@ -1,0 +1,99 @@
+[HD]
+CASE_B  V1.2
+LINK    0
+[FILE]
+1 ".\Source\safety_controller.c"
+[CLASS]
+D 1,,"SafetyOutput",,".\Source\safety_controller.h",9,,struct,"SafetyOutput;.\Source\safety_controller.h",,,,,7864320,,,
+R ".\Source\safety_controller.h",13,,,,,,,,
+[MEMBER]
+D 1,,"safeSpeed",,".\Source\safety_controller.h",10,,,"safeSpeed;SafetyOutput;.\Source\safety_controller.h",struct,"SafetyOutput;.\Source\safety_controller.h","int ",,0,,,
+A ".\Source\safety_controller.c",51,,"SafetyController",0
+A ".\Source\safety_controller.c",66,,"SafetyController",0
+A ".\Source\safety_controller.c",78,,"SafetyController",
+A ".\Source\safety_controller.c",81,,"SafetyController",
+D 1,,"safeTorque",,".\Source\safety_controller.h",11,,,"safeTorque;SafetyOutput;.\Source\safety_controller.h",struct,"SafetyOutput;.\Source\safety_controller.h","int ",,0,,,
+A ".\Source\safety_controller.c",52,,"SafetyController",0
+A ".\Source\safety_controller.c",67,,"SafetyController",0
+A ".\Source\safety_controller.c",79,,"SafetyController",0
+A ".\Source\safety_controller.c",82,,"SafetyController",
+D 1,,"faultActive",,".\Source\safety_controller.h",12,,,"faultActive;SafetyOutput;.\Source\safety_controller.h",struct,"SafetyOutput;.\Source\safety_controller.h","int ",,0,,,
+A ".\Source\safety_controller.c",50,,"SafetyController",0
+A ".\Source\safety_controller.c",65,,"SafetyController",1
+A ".\Source\safety_controller.c",73,,"SafetyController",1
+R ".\Source\safety_controller.c",77,,module,"SafetyController",11,0,,,
+[FUNC]
+D 1,,"SafetyController",,".\Source\safety_controller.c",41,,extern,,,,"struct SafetyOutput ()",,131076,".\Source\safety_controller.h",26,"SafetyOutput ()"
+D 1,,"SafetyController_SelfTest",,".\Source\safety_controller.c",29,,extern,,,,"int ()",,131072,".\Source\safety_controller.h",27,
+R ".\Source\safety_controller.c",55,,module,"SafetyController",33,,,,
+d 1,,"WinAMS_SPMC_Init",,".\Source\safety_controller.c",3,,extern,,,,"void ()",,131088,,,
+R ".\Source\safety_controller.c",7,,module,"main",33,,,,
+D 1,,"main",,".\Source\safety_controller.c",6,,extern,,,,"int ()",,131074,,,
+S 1,,"clamp_int",,".\Source\safety_controller.c",15,,static,"clamp_int;.\Source\safety_controller.c",,,"int ()",,131072,,,
+R ".\Source\safety_controller.c",61,,module,"SafetyController",33,,,,
+R ".\Source\safety_controller.c",60,,module,"SafetyController",33,,,,
+R ".\Source\safety_controller.c",59,,module,"SafetyController",33,,,,
+[VAR]
+S 1,,"v",,".\Source\safety_controller.c",15,,arg,"v;clamp_int;.\Source\safety_controller.c",module,"clamp_int;.\Source\safety_controller.c","int ",,0,,,
+R ".\Source\safety_controller.c",21,,module,"clamp_int;.\Source\safety_controller.c",34,,,,
+R ".\Source\safety_controller.c",18,,module,"clamp_int;.\Source\safety_controller.c",14,,,,
+R ".\Source\safety_controller.c",16,,module,"clamp_int;.\Source\safety_controller.c",12,,,,
+S 1,,"min",,".\Source\safety_controller.c",15,,arg,"min;clamp_int;.\Source\safety_controller.c",module,"clamp_int;.\Source\safety_controller.c","int ",,0,,,
+R ".\Source\safety_controller.c",17,,module,"clamp_int;.\Source\safety_controller.c",34,,,,
+R ".\Source\safety_controller.c",16,,module,"clamp_int;.\Source\safety_controller.c",12,,,,
+S 1,,"max",,".\Source\safety_controller.c",15,,arg,"max;clamp_int;.\Source\safety_controller.c",module,"clamp_int;.\Source\safety_controller.c","int ",,0,,,
+R ".\Source\safety_controller.c",19,,module,"clamp_int;.\Source\safety_controller.c",34,,,,
+R ".\Source\safety_controller.c",18,,module,"clamp_int;.\Source\safety_controller.c",14,,,,
+S 1,,"simulatedSensor",,".\Source\safety_controller.c",29,,arg,"simulatedSensor;SafetyController_SelfTest",module,"SafetyController_SelfTest","int ",,0,,,
+R ".\Source\safety_controller.c",32,,module,"SafetyController_SelfTest",10,1,,,
+S 1,,"result",,".\Source\safety_controller.c",30,,auto,"result;SafetyController_SelfTest",module,"SafetyController_SelfTest","int ",,0,,,
+R ".\Source\safety_controller.c",37,,module,"SafetyController_SelfTest",34,,,,
+A ".\Source\safety_controller.c",35,,"SafetyController_SelfTest",0
+A ".\Source\safety_controller.c",33,,"SafetyController_SelfTest",1
+S 1,,"speed",,".\Source\safety_controller.c",41,,arg,"speed;SafetyController",module,"SafetyController","int ",,0,,,
+R ".\Source\safety_controller.c",59,,module,"SafetyController",34,,,,
+S 1,,"maxSpeed",,".\Source\safety_controller.c",41,,arg,"maxSpeed;SafetyController",module,"SafetyController","int ",,0,,,
+R ".\Source\safety_controller.c",60,,module,"SafetyController",34,,,,
+S 1,,"sensorOK",,".\Source\safety_controller.c",41,,arg,"sensorOK;SafetyController",module,"SafetyController","int ",,0,,,
+R ".\Source\safety_controller.c",64,,module,"SafetyController",26,,,,
+R ".\Source\safety_controller.c",55,,module,"SafetyController",34,,,,
+S 1,,"torqueCmd",,".\Source\safety_controller.c",41,,arg,"torqueCmd;SafetyController",module,"SafetyController","int ",,0,,,
+R ".\Source\safety_controller.c",61,,module,"SafetyController",34,,,,
+S 1,,"out",,".\Source\safety_controller.c",43,,auto,"out;SafetyController",module,"SafetyController","struct SafetyOutput ",,0,,,"SafetyOutput "
+R ".\Source\safety_controller.c",85,,module,"SafetyController",,,,,
+A ".\Source\safety_controller.c",82,,"SafetyController",
+A ".\Source\safety_controller.c",81,,"SafetyController",
+A ".\Source\safety_controller.c",79,,"SafetyController",0
+A ".\Source\safety_controller.c",78,,"SafetyController",
+R ".\Source\safety_controller.c",77,,module,"SafetyController",37,,,,
+A ".\Source\safety_controller.c",73,,"SafetyController",1
+R ".\Source\safety_controller.c",68,,module,"SafetyController",,,,,
+A ".\Source\safety_controller.c",67,,"SafetyController",0
+A ".\Source\safety_controller.c",66,,"SafetyController",0
+A ".\Source\safety_controller.c",65,,"SafetyController",1
+A ".\Source\safety_controller.c",52,,"SafetyController",0
+A ".\Source\safety_controller.c",51,,"SafetyController",0
+A ".\Source\safety_controller.c",50,,"SafetyController",0
+S 1,,"spd",,".\Source\safety_controller.c",44,,auto,"spd;SafetyController",module,"SafetyController","int ",,0,,,
+R ".\Source\safety_controller.c",81,,module,"SafetyController",2,,,,
+R ".\Source\safety_controller.c",78,,module,"SafetyController",2,,,,
+R ".\Source\safety_controller.c",72,,module,"SafetyController",14,,,,
+A ".\Source\safety_controller.c",59,,"SafetyController",
+S 1,,"limit",,".\Source\safety_controller.c",45,,auto,"limit;SafetyController",module,"SafetyController","int ",,0,,,
+R ".\Source\safety_controller.c",72,,module,"SafetyController",14,,,,
+A ".\Source\safety_controller.c",60,,"SafetyController",
+S 1,,"tq",,".\Source\safety_controller.c",46,,auto,"tq;SafetyController",module,"SafetyController","int ",,0,,,
+R ".\Source\safety_controller.c",82,,module,"SafetyController",2,,,,
+A ".\Source\safety_controller.c",61,,"SafetyController",
+S 1,,"selftest_result",,".\Source\safety_controller.c",47,,auto,"selftest_result;SafetyController",module,"SafetyController","int ",,0,,,
+R ".\Source\safety_controller.c",56,,module,"SafetyController",34,,,,
+A ".\Source\safety_controller.c",55,,"SafetyController",
+[CONST]
+[TYPE]
+D 1,,"SafetyOutput",,".\Source\safety_controller.h",13,,,"SafetyOutput;.\Source\safety_controller.h",,,"struct SafetyOutput ",,0,,,
+R ".\Source\safety_controller.c",43,,module,"SafetyController",,,,,
+R ".\Source\safety_controller.c",40,,,,,,,,
+R ".\Source\safety_controller.h",26,,,,,,,,
+[ASM]
+[DEFINE]
+D 1,,"SAFETY_CONTROLLER_H",,".\Source\safety_controller.h",2,,,"SAFETY_CONTROLLER_H;.\Source\safety_controller.h",,,,,,,,

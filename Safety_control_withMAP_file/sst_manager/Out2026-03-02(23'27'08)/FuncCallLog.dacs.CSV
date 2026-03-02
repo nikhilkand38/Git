@@ -1,0 +1,10 @@
+"All Function Coverage Report"
+"Function Coverage Rate","60%"
+
+"Function Coverage Report"
+"Filename","Function Coverage Rate (by file)","Function Name","Execution"
+"safety_controller.c","75%","SafetyController","yes"
+,,"SafetyController_SelfTest","yes"
+,,"clamp_int","yes"
+,,"main","no"
+"startup.c","0%","_start","no"

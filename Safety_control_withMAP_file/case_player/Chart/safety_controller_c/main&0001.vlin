@@ -1,0 +1,4 @@
+".\\Source\\safety_controller.c"
+"main"	6,12
+	2	7 "WinAMS_SPMC_Init();"
+	3	8

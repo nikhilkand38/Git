@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SorceWindowPos Version="3.8.4.20" Orientation="Horizontal">
+  <MDITabGroups WidthRate="1" SelectedTabPID="67108865" SelectedTabSID="83886082">
+    <MDITabGroup PID="67108865" SID="83886087" FileName="startup.c" BuildFilePath="C:\winams1\demo\Safety_control_withMAP_file\case_player\Source\" X="0" Y="0" />
+    <MDITabGroup PID="67108865" SID="83886082" FileName="safety_controller.c" BuildFilePath="C:\winams1\demo\Safety_control_withMAP_file\case_player\Source\" X="0" Y="0" />
+    <MDITabGroup PID="67108865" SID="83886090" FileName="winAMS_Spmc.c" BuildFilePath="C:\winams1\demo\Safety_control_withMAP_file\cortex_r52_demo_elf\src\" X="0" Y="188" />
+  </MDITabGroups>
+</SorceWindowPos>

@@ -1,0 +1,6 @@
+[TEST]
+TestTitle=
+ActTestCsvNo=2
+ActTestCsvName0=demo_func1.csv
+ActTestCsvName1=SafetyController_SelfTest.csv
+encode=0

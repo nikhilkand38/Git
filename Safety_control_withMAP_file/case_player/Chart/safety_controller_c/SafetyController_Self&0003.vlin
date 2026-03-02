@@ -1,0 +1,7 @@
+".\\Source\\safety_controller.c"
+"SafetyController_SelfTest"	29,38
+	2	30 "int result;"
+	3	32
+	4	33 "result = 1;"
+	5	35 "result = 0;"
+	6	37 "return result;"

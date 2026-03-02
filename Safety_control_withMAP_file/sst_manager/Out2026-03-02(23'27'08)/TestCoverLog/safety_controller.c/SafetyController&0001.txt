@@ -1,0 +1,62 @@
+Function name           : SafetyController 
+Source file name        : C:\winams1\demo\Safety_control_withMAP_file\case_player\Source\safety_controller.c 
+C0 Coverage rate        : 100%
+C1 Coverage rate        : 100%
+MC/DC Coverage rate     : 100%
+Test time               : 2026/03/03 02:38:25
+
+------ ----- -------- ------   -----------------------------------------
+Un-exe Exec   C1       Count     SOURCE 
+------ ----- -------- ------   -----------------------------------------
+                                }
+                                
+                                SafetyOutput SafetyController(int speed, int maxSpeed, int sensorOK, int torqueCmd)
+                                {
+                                    /* ---- Declarations must be at the beginning for C90 ---- */
+                                    SafetyOutput out;
+                                    int spd;
+                                    int limit;
+                                    int tq;
+                                    int selftest_result;
+                                
+                                    /* Initialize output struct explicitly (C90-friendly) */
+         O                 9        out.faultActive = 0;
+         O                 9        out.safeSpeed   = 0;
+         O                 9        out.safeTorque  = 0;
+                                
+                                    /* Call self test (unused result for now, but may be logged) */
+         O                 9        selftest_result = SafetyController_SelfTest(sensorOK);
+         O                 9        (void)selftest_result; /* suppress unused warning */
+                                
+                                    /* Normalize unrealistic inputs for stable test expectations */
+         O                 9        spd   = clamp_int(speed,     -1000000, 1000000);
+         O                 9        limit = clamp_int(maxSpeed,  -1000000, 1000000);
+         O                 9        tq    = clamp_int(torqueCmd, -1000000, 1000000);
+                                
+                                    /* 1) Sensor failure is highest priority */
+         O    T/F          9        if (!sensorOK) {
+                                [MC/DC t/f] sensorOK
+         O                 2            out.faultActive = 1;
+         O                 2            out.safeSpeed = 0;     /* Force to 0 when sensor failed */
+         O                 2            out.safeTorque = 0;    /* Cut torque */
+         O                 2            return out;
+                                    }
+                                
+                                    /* 2) Overspeed check */
+         O    T/F          7        if (spd > limit) {
+                                [MC/DC t/f] spd>limit
+         O                 4            out.faultActive = 1;
+                                    }
+                                
+                                    /* 3) Output selection */
+         O    T/F          7        if (out.faultActive) {
+                                [MC/DC t/f] out.faultActive
+         O                 4            out.safeSpeed = spd;   /* Keep measured speed visible for logging/diagnostics */
+         O                 4            out.safeTorque = 0;    /* Enforce torque cut when fault */
+                                    } else {
+         O                 3            out.safeSpeed = spd;   /* Normal operation */
+         O                 3            out.safeTorque = tq;   /* Pass-through torque */
+                                    }
+                                
+         O                 7        return out;
+                                }

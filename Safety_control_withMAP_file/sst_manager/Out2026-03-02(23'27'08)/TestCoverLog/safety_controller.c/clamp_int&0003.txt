@@ -1,0 +1,24 @@
+Function name           : safety_controller.c/clamp_int 
+Source file name        : C:\winams1\demo\Safety_control_withMAP_file\case_player\Source\safety_controller.c 
+C0 Coverage rate        : 60%
+C1 Coverage rate        : 50%
+MC/DC Coverage rate     : 0%
+Test time               : 2026/03/03 02:38:25
+
+------ ----- -------- ------   -----------------------------------------
+Un-exe Exec   C1       Count     SOURCE 
+------ ----- -------- ------   -----------------------------------------
+                                }
+                                /* Internal clamp utility to keep values predictable in tests */
+                                static int clamp_int(int v, int min, int max)
+                                {
+         O     /F         27        if (v < min) {
+                                [MC/DC  /f] v<min
+  X                        0            return min;
+         O     /F         27        } else if (v > max) {
+                                [MC/DC  /f] v>max
+  X                        0            return max;
+                                    } else {
+         O                27            return v;
+                                    }
+                                }
