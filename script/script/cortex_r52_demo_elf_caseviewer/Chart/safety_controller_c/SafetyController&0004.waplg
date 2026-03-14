@@ -1,0 +1,116 @@
+[function]
+	"SafetyController"	,41,84,13,12,36,41,8,1,0
+[block]
+	1	41,41,0,0
+	2	48,59,2,0
+	3	62,62,0,1
+	4	63,66,2,1
+	6	0,0,0,1
+	7	70,70,0,1
+	8	71,71,2,1
+	9	0,0,0,1
+	10	75,75,0,1
+	11	76,77,2,1
+	12	79,80,2,1
+	13	83,83,2,1
+	15	84,84,0,0
+[jump]
+	B	1,1,2
+	B	2,2,3
+	C	3,3,4,6
+	B	4,4,15
+	B	6,6,7
+	C	7,7,8,9
+	B	8,8,9
+	B	9,9,10
+	C	10,10,11,12
+	B	11,11,13
+	B	12,12,13
+	B	13,13,15
+[expression]
+	E5	1,2,0,0,0,mem,faultActive,"faultActive;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,0
+	E5	2,2,0,0,0,mem,safeSpeed,"safeSpeed;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,0
+	E5	3,2,0,0,0,mem,safeTorque,"safeTorque;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,0
+	E5	4,2,0,0,0,,,,,1
+		extern,SafetyController_SelfTest(),,
+	E7	5,33,0,0,0,SafetyController_SelfTest(),,1
+	A2	6,39,0,0,0,arg,sensorOK,"sensorOK;SafetyController",,
+	E5	7,43,0,0,0,,,,,1
+		extern,SafetyController_SelfTest(),,
+	E5	8,2,0,0,0,,,,,1
+		static,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",
+	E7	9,33,0,0,0,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",3
+	A2	10,39,0,0,0,arg,speed,"speed;SafetyController",,
+	A2	11,39,0,0,0,,,,,-1000000
+	A2	12,39,0,0,0,,,,,1000000
+	E5	13,2,0,0,0,,,,,1
+		static,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",
+	E7	14,33,0,0,0,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",3
+	A2	15,39,0,0,0,arg,maxSpeed,"maxSpeed;SafetyController",,
+	A2	16,39,0,0,0,,,,,-1000000
+	A2	17,39,0,0,0,,,,,1000000
+	E5	18,2,0,0,0,,,,,1
+		static,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",
+	E7	19,33,0,0,0,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",3
+	A2	20,39,0,0,0,arg,torqueCmd,"torqueCmd;SafetyController",,
+	A2	21,39,0,0,0,,,,,-1000000
+	A2	22,39,0,0,0,,,,,1000000
+	E1	24,11,0,1,9,arg,sensorOK,"sensorOK;SafetyController",,0,,0,1
+
+	L1	23,26,0,24
+	E5	25,2,0,0,0,mem,faultActive,"faultActive;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,0
+	E5	26,2,0,0,0,mem,safeSpeed,"safeSpeed;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,0
+	E5	27,2,0,0,0,mem,safeTorque,"safeTorque;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,0
+	E4	29,14,0,0,9,static,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",
+		static,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",
+
+	E5	30,2,0,0,0,mem,faultActive,"faultActive;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,0
+	E3	31,11,0,0,15,1,0,0
+
+	E5	32,2,0,0,0,mem,safeSpeed,"safeSpeed;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,1
+		static,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",
+	E5	33,2,0,0,0,mem,safeTorque,"safeTorque;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,0
+	E5	34,2,0,0,0,mem,safeSpeed,"safeSpeed;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,1
+		static,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",
+	E5	35,2,0,0,0,mem,safeTorque,"safeTorque;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,1
+		static,clamp_int(),"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",
+[statement]
+	S2	start,1
+	S3	copy,2,1,"",0,48,1
+	S3	copy,2,2,"",0,49,2
+	S3	copy,2,3,"",0,50,3
+	S3	copy,2,4,"",0,53,4
+	S4	call,2,5,"SafetyController_SelfTest",0,53,1
+	S3	copy,2,7,"",0,54,7
+	S3	copy,2,8,"",0,57,8
+	S4	call,2,9,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",0,57,2
+	S3	copy,2,13,"",0,58,13
+	S4	call,2,14,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",0,58,3
+	S3	copy,2,18,"",0,59,18
+	S4	call,2,19,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",0,59,4
+	S2	cstat,2
+	S3	if,3,23,"!sensorOK",0,62,24
+	S3	copy,4,25,"",0,63,25
+	S3	copy,4,26,"",0,64,26
+	S3	copy,4,27,"",0,65,27
+	S2	cstat,4
+	S1	return,,
+	S1	endif,,
+	S2	cstat,6
+	S3	if,7,29,"spd>limit",0,70,29
+	S3	copy,8,30,"",0,71,30
+	S2	cstat,8
+	S1	endif,,
+	S2	cstat,9
+	S3	if,10,31,"out.faultActive",0,75,31
+	S3	copy,11,32,"",0,76,32
+	S3	copy,11,33,"",0,77,33
+	S2	cstat,11
+	S1	else,,
+	S3	copy,12,34,"",0,79,34
+	S3	copy,12,35,"",0,80,35
+	S2	cstat,12
+	S1	endif,,
+	S2	cstat,13
+	S1	return,,
+	S2	end,15

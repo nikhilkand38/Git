@@ -1,0 +1,107 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Sunday, March 8, 2026 3:40:42 AM
+   Source : C:\winams1\script\cortex_r52_demo_elf\
+     Dest : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\
+
+    Files : *.*
+	    
+  Options : *.* /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   2	C:\winams1\script\cortex_r52_demo_elf\
+	    New File  		    1079	LICENSE100%  
+	    New File  		    1865	README.md100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         2         2         0         0         0         0
+   Bytes :     2.8 k     2.8 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             736,000 Bytes/sec.
+   Speed :              42.114 MegaBytes/min.
+   Ended : Sunday, March 8, 2026 3:40:42 AM
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Sunday, March 8, 2026 3:40:42 AM
+   Source : C:\winams1\script\cortex_r52_demo_elf\src\
+     Dest : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\src\
+
+    Files : *.*
+	    
+  Options : *.* /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	  New Dir          3	C:\winams1\script\cortex_r52_demo_elf\src\
+	    New File  		    2264	safety_controller.c100%  
+	    New File  		    1154	safety_controller.h100%  
+	    New File  		     117	startup.c100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         1         0         0         0         0
+   Files :         3         3         0         0         0         0
+   Bytes :     3.4 k     3.4 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             441,875 Bytes/sec.
+   Speed :              25.284 MegaBytes/min.
+   Ended : Sunday, March 8, 2026 3:40:42 AM
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Sunday, March 8, 2026 3:40:42 AM
+   Source : C:\winams1\script\cortex_r52_demo_elf\build\
+     Dest : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\build\
+
+    Files : *.*
+	    
+  Options : *.* /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	  New Dir          1	C:\winams1\script\cortex_r52_demo_elf\build\
+	    New File  		    1146	Makefile100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         1         0         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :     1.1 k     1.1 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             573,000 Bytes/sec.
+   Speed :              32.787 MegaBytes/min.
+   Ended : Sunday, March 8, 2026 3:40:42 AM
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -I../src -c ../src/../src/safety_controller.c -o ../src/safety_controller.o
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -I../src -c ../src/../src/startup.c -o ../src/startup.o
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -I../src -c ../src/../src/winAMS_Spmc.c -o ../src/winAMS_Spmc.o
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -nostdlib ../src/safety_controller.o ../src/startup.o ../src/winAMS_Spmc.o -Wl,-Map=safety_controller.map -o safety_controller.elf
+        1 file(s) copied.

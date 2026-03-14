@@ -1,0 +1,94 @@
+
+Command: -crtprojimport C:\winams1\script\case_player.vopt C:\winams1\script\cortex_r52_demo_elf_caseviewer
+
+Command: -cpucpl CortexR52 armclang C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+
+Command: -clr C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+
+Command: -a C:\winams1\script\source_path_file.txt C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+
+Command: -r C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Creating-Documentation... 
+Analyzing C_source... 
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.c
+C:\winams1\script\cortex_r52_demo_elf\src\startup.c
+Creating_Browser_information_file... 
+Creating_C_source_specification... 
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.c
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.h
+C:\winams1\script\cortex_r52_demo_elf\src\startup.c
+Creating_Module_Structure_Diagram_[File]... 
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.c 
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.h 
+C:\winams1\script\cortex_r52_demo_elf\src\startup.c 
+Creating_entire_project_specification... 
+Complete-Documentation-Generation. 
+
+Command: -putdmyfunc C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+
+Command: -set_rev SPMC_OUTCODE=1;SPMC_AUTOCOPY=1 C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+
+Command: -allspmc C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+
+Command: -spmcDir C:\winams1\script\spmc_dir_list.txt C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+
+Command: -spmcCopy C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+
+Command: -r C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Creating-Documentation... 
+Start auto copy. 
+Complete auto copy 
+Generates source file for coverage measurement. 
+Add the following C source files to the object with hook code build environment. 
+C:\winams1\script\cortex_r52_demo_elf_caseviewer\source\winAMS_Spmc.c 
+Add the folder of the following 2 header files to the user include path setting, then build the object with hook code. 
+C:\winams1\script\cortex_r52_demo_elf_caseviewer\source\winAMS_Spmc.h 
+C:\winams1\script\cortex_r52_demo_elf_caseviewer\source\winAMS_SpmcDefine.h 
+Analyzing C_source... 
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.c
+C:\winams1\script\cortex_r52_demo_elf\src\startup.c
+Creating_Browser_information_file... 
+Creating_C_source_specification... 
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.c
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.h
+C:\winams1\script\cortex_r52_demo_elf\src\startup.c
+Creating_Module_Structure_Diagram_[File]... 
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.c 
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.h 
+C:\winams1\script\cortex_r52_demo_elf\src\startup.c 
+Creating_entire_project_specification... 
+Complete-Documentation-Generation. 
+
+Command: -m C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Start_MISRA-C_check... 
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.c
+C:\winams1\script\cortex_r52_demo_elf\src\startup.c
+......
+Complete_MISRA-C_check 
+
+Command: -H C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+HTML-Converting... 
+safety_controller.c: 
+safety_controller.h: 
+startup.c: 
+_start&0001.vcht: 
+clamp_int&0002.vcht: 
+main&0001.vcht: 
+SafetyController&0004.vcht: 
+SafetyController_Self&0003.vcht: 
+_start&0001.vmod: 
+clamp_int&0002.vmod: 
+main&0001.vmod: 
+SafetyController&0004.vmod: 
+SafetyController_Self&0003.vmod: 
+SafetyOutput&0001.vdat: 
+cortex_r52_demo_elf_caseviewer.vblk: 
+safety_controller.vblk: 
+startup.vblk: 
+cortex_r52_demo_elf_caseviewer.vmlt: 
+safety_controller.vmlt: 
+startup.vmlt: 
+cortex_r52_demo_elf_caseviewer.vdlt: 
+Complete-Converting-HTML 
+
+Command: -endCP2

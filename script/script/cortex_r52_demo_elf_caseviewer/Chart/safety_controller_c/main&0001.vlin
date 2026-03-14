@@ -1,0 +1,4 @@
+"..\\cortex_r52_demo_elf\\src\\safety_controller.c"
+"main"	6,12
+	2	7 "WinAMS_SPMC_Init();"
+	3	8

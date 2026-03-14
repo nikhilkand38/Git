@@ -1,0 +1,67 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Saturday, March 7, 2026 8:51:30 PM
+   Source : C:\winams1\script\cortex_r52_demo_elf\
+     Dest : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\
+
+    Files : *.*
+	    
+  Options : *.* /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   2	C:\winams1\script\cortex_r52_demo_elf\
+	    New File  		    1079	LICENSE100%  
+	    New File  		    1865	README.md100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         2         2         0         0         0         0
+   Bytes :     2.8 k     2.8 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           1,472,000 Bytes/sec.
+   Speed :              84.229 MegaBytes/min.
+   Ended : Saturday, March 7, 2026 8:51:30 PM
+
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Saturday, March 7, 2026 8:51:30 PM
+   Source : C:\winams1\script\cortex_r52_demo_elf\build\
+     Dest : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\build\
+
+    Files : *.*
+	    
+  Options : *.* /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	  New Dir          1	C:\winams1\script\cortex_r52_demo_elf\build\
+	    New File  		    1146	Makefile100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         1         0         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :     1.1 k     1.1 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :             382,000 Bytes/sec.
+   Speed :              21.858 MegaBytes/min.
+   Ended : Saturday, March 7, 2026 8:51:30 PM
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+make: *** No rule to make target `../src/safety_controller.o', needed by `obj'.  Stop.

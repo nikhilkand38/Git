@@ -1,0 +1,381 @@
+;===============================================================
+;	Assembly chart generation option file
+;===============================================================
+; Specific source analysis mode
+;	
+;  You can select 3 type of mode (mixed selection available)
+; 	/mode = macro ------ Structured Macro mode (GAIO oroginal macro)
+;	        comment ---- Feature comment mode
+;	        operation -- Mnimonic mode
+;===============================================================
+;/mode = operation 
+;===============================================================
+; Module split mode
+;	/module = mcall --- Splits the module with called label within
+;	 		    the file
+;	        = mret ---- Splits the module with label after return 
+;			    mnimonic which is not called from others
+;===============================================================
+/module=mcall mret
+;===============================================================
+; Define section other than code (end of code section)
+;	This definition separates code section and other section
+;	/dsect=mnimonic  operand..
+;	Ex.)/dsect = sect data dummy stak 
+;	    /dsect = end
+;	    /dsect = ends              
+;	    /dsect = dseg
+;     
+;	    /dsect = .text             
+;
+;===============================================================
+/dsect = end
+;===============================================================
+; Define data directives (control branch label)
+;	For discriminate data label from branch label
+;	/data = assembler directives
+;	Ex.) /data = db  
+;        /data = dw       
+;        /data = ds
+;        /data = FLOAT
+;        /data = DFLOAT
+;
+;===============================================================
+/data = db
+/data = dw
+/data = ds
+/data = dd
+;===============================================================
+; Define global directives
+;
+;	    /global = mnimonic
+;===============================================================
+/global=global
+;===============================================================
+; Specific branch label
+;	
+;	/label = Label statement style1 Label statement style2..
+;
+;	        label1 --- Label name:        (Label name: except equ..)
+;		 	label2 --- Label name equ *
+;	        label3 --- Label name equ $
+;	        label4 --- Label name: equ *
+;		 	label5 --- Label name: equ $
+;   	    label6 --- Label name (Recognize the first letter as label)
+;
+;		Default style labe11, label2, label3  
+;===============================================================
+/label = label1 label2
+;===============================================================
+; Splits the process
+;	Specific the split mode of assembly source to generated chart
+;  box.
+;	/proc = mode
+;	        comment --- Splits the box with each comment 
+;			step    --- Splits the box with each mnimonic
+;	        blank   --- Splits the box with each blank in the source code 
+;	        mark    --- Splits the box with the area specified with feature 
+;         comment ". 
+;
+;===============================================================
+/proc=blank
+;===============================================================
+; Define non-condition jump mnimonic
+;	
+;	/goto = mnimonic  /status  /delay = n
+;
+;		Specific delay slot number to "n"
+;===============================================================
+/goto = bra
+/goto = jmp
+/goto = bra.s
+/goto = bra.l
+/goto = bra.x
+;===============================================================
+; Define condition jump mnimonic
+;	
+;	/gotoc = mnimonic condition operando  condition information
+; /delay = n
+;
+;		Specific delay slot number to "n"
+;===============================================================
+/gotoc = bcc		/nc
+/gotoc = bcs		/c
+/gotoc = beq		/eq
+/gotoc = bge		/ge
+/gotoc = bgt		/gt
+/gotoc = bhi		/hi
+/gotoc = ble		/le
+/gotoc = bls		/ls
+/gotoc = blt		/lt
+/gotoc = bmi		/mi
+/gotoc = bne		/ne
+/gotoc = bpl		/pl
+/gotoc = bvc		/nv
+/gotoc = bvs		/v
+
+/gotoc = bcc.s		/nc
+/gotoc = bcs.s		/c
+/gotoc = beq.s		/eq
+/gotoc = bge.s		/ge
+/gotoc = bgt.s		/gt
+/gotoc = bhi.s		/hi
+/gotoc = ble.s		/le
+/gotoc = bls.s		/ls
+/gotoc = blt.s		/lt
+/gotoc = bmi.s		/mi
+/gotoc = bne.s		/ne
+/gotoc = bpl.s		/pl
+/gotoc = bvc.s		/nv
+/gotoc = bvs.s		/v
+
+/gotoc = bcc.l		/nc
+/gotoc = bcs.l		/c
+/gotoc = beq.l		/eq
+/gotoc = bge.l		/ge
+/gotoc = bgt.l		/gt
+/gotoc = bhi.l		/hi
+/gotoc = ble.l		/le
+/gotoc = bls.l		/ls
+/gotoc = blt.l		/lt
+/gotoc = bmi.l		/mi
+/gotoc = bne.l		/ne
+/gotoc = bpl.l		/pl
+/gotoc = bvc.l		/nv
+/gotoc = bvs.l		/v
+
+/gotoc = bcc.x		/nc
+/gotoc = bcs.x		/c
+/gotoc = beq.x		/eq
+/gotoc = bge.x		/ge
+/gotoc = bgt.x		/gt
+/gotoc = bhi.x		/hi
+/gotoc = ble.x		/le
+/gotoc = bls.x		/ls
+/gotoc = blt.x		/lt
+/gotoc = bmi.x		/mi
+/gotoc = bne.x		/ne
+/gotoc = bpl.x		/pl
+/gotoc = bvc.x		/nv
+/gotoc = bvs.x		/v
+;===============================================================
+;  Define comparison condition jump
+;	Can define bit branch and counter
+;	/cmpgoto = mnimonic  condition operand
+;	/operand = number of operand
+;	/true = "Condition comment when true"
+;	/false = "Condition comment when false"
+;	/label = "Label operand"
+;	/delay = n
+;
+;		Specific delay slot number to "n"
+;===============================================================
+/cmpgoto = dbcc		/nc	/true="C == 0"	/false="C != 0"
+/cmpgoto = dbcs		/c	/true="C == 1"	/false="C != 1"
+/cmpgoto = dbeq		/eq	/true="$1 == 0"	/false="$1 != 0"
+/cmpgoto = dbne		/ne	/true="$1 != 0"	/false="$1 == 0"
+/cmpgoto = dbge		/ge	/true="$1 >= 0"	/false="$1 < 0"
+/cmpgoto = dbgt		/gt	/true="$1 > 0"	/false="$1 <= 0"
+/cmpgoto = dbhi		/hi	/true="$1 > 0"	/false="$1 <= 0"
+/cmpgoto = dble		/le	/true="$1 <= 0"	/false="$1 > 0"
+/cmpgoto = dbls		/ls	/true="$1 <= 0"	/false="$1 > 0"
+/cmpgoto = dblt		/lt	/true="$1 < 0"	/false="$1 >= 0"
+/cmpgoto = dbmi		/mi	/true="N == 1"	/false="N != 1"
+/cmpgoto = dbpl		/pl	/true="N == 0"	/false="N != 0"
+/cmpgoto = dbvc		/nv	/true="V == 0"	/false="V != 0"
+/cmpgoto = dbvs		/v	/true="V == 1"	/false="V != 1"
+/cmpgoto = dbcc.x	/nc	/true="C == 0"	/false="C != 0"
+/cmpgoto = dbcs.x	/c	/true="C == 1"	/false="C != 1"
+/cmpgoto = dbeq.x	/eq	/true="$1 == 0"	/false="$1 != 0"
+/cmpgoto = dbne.x	/ne	/true="$1 != 0"	/false="$1 == 0"
+/cmpgoto = dbge.x	/ge	/true="$1 >= 0"	/false="$1 < 0"
+/cmpgoto = dbgt.x	/gt	/true="$1 > 0"	/false="$1 <= 0"
+/cmpgoto = dbhi.x	/hi	/true="$1 > 0"	/false="$1 <= 0"
+/cmpgoto = dble.x	/le	/true="$1 <= 0"	/false="$1 > 0"
+/cmpgoto = dbls.x	/ls	/true="$1 <= 0"	/false="$1 > 0"
+/cmpgoto = dblt.x	/lt	/true="$1 < 0"	/false="$1 >= 0"
+/cmpgoto = dbmi.x	/mi	/true="N == 1"	/false="N != 1"
+/cmpgoto = dbpl.x	/pl	/true="N == 0"	/false="N != 0"
+/cmpgoto = dbvc.x	/nv	/true="V == 0"	/false="V != 0"
+/cmpgoto = dbvs.x	/v	/true="V == 1"	/false="V != 1"
+;===============================================================
+; Define sub-routine call mnimonic
+;	
+;	/call = mnimonic  /status  /delay = n
+;
+;		Specific delay slot number to "n"
+;===============================================================
+/call = bsr
+/call = jsr
+/call = bsr.s
+/call = bsr.l
+/call = bsr.x
+;===============================================================
+; Define return mnimonic
+;	
+;	/return = mnimonic  /status  /delay = n
+;
+;		Specific delay slot number(0 to 9) to "n"
+;===============================================================
+/return = rte
+/return = rts
+;===============================================================
+; Define operation (compare)
+;
+;	/comp = mnimonic    /rev
+;
+;	 Changes the order between operand1 and operand2 with /rev
+;===============================================================
+/comp = cmp
+/comp = cmp.b
+/comp = cmp.w
+/comp = cmp.l
+/comp = cmpa
+/comp = cmpa.w
+/comp = cmpa.l
+/comp = cmpi
+/comp = cmpi.b
+/comp = cmpi.w
+/comp = cmpi.l
+/comp = cmpm
+/comp = cmpm.b
+/comp = cmpm.w
+/comp = cmpm.l
+
+/comp = abcd
+/comp = abcd.b
+/comp = add
+/comp = add.b
+/comp = add.w
+/comp = add.l
+/comp = addi
+/comp = addi.b
+/comp = addi.w
+/comp = addi.l
+/comp = addq
+/comp = addq.b
+/comp = addq.w
+/comp = addq.l
+/comp = addx
+/comp = addx.b
+/comp = addx.w
+/comp = addx.l
+/comp = and
+/comp = and.b
+/comp = and.w
+/comp = and.l
+/comp = andi
+/comp = andi.b
+/comp = andi.w
+/comp = andi.l
+/comp = bchg
+/comp = bchg.b
+/comp = bchg.l
+/comp = bclr
+/comp = bclr.b
+/comp = bclr.l
+/comp = bset
+/comp = bset.b
+/comp = bset.l
+/comp = btst
+/comp = btst.b
+/comp = btst.l
+/comp = chk
+/comp = chk.w
+/comp = divs
+/comp = divs.w
+/comp = divu
+/comp = divu.w
+/comp = eor
+/comp = eor.b
+/comp = eor.w
+/comp = eor.l
+/comp = eori
+/comp = eori.b
+/comp = eori.w
+/comp = eori.l
+/comp = muls
+/comp = muls.w
+/comp = mulu
+/comp = mulu.w
+/comp = nbcd
+/comp = nbcd.b
+/comp = or
+/comp = or.b
+/comp = or.w
+/comp = or.l
+/comp = ori
+/comp = ori.b
+/comp = ori.w
+/comp = ori.l
+/comp = sbcd
+/comp = sbcd.b
+/comp = sub
+/comp = sub
+/comp = sub.b
+/comp = sub.w
+/comp = sub.l
+/comp = subi
+/comp = subi.b
+/comp = subi.w
+/comp = subi.l
+/comp = subq
+/comp = subq.b
+/comp = subq.w
+/comp = subq.l
+/comp = subx
+/comp = subx.b
+/comp = subx.w
+/comp = subx.l
+;===============================================================
+; Define test mnimonic
+;	Generate the condition comment of test condition
+;	/test = mnimonic 
+;
+;===============================================================
+/test = tas
+/test = tas.b
+/test = tst
+/test = tst.b
+/test = tst.w
+/test = tst.l
+/test = scc
+/test = scs
+/test = seq
+/test = sge
+/test = sgt
+/test = shi
+/test = sle
+/test = sls
+/test = slt
+/test = smi
+/test = sne
+/test = spl
+/test = svc
+/test = svs
+
+/test = scc.b
+/test = scs.b
+/test = seq.b
+/test = sge.b
+/test = sgt.b
+/test = shi.b
+/test = sle.b
+/test = sls.b
+/test = slt.b
+/test = smi.b
+/test = sne.b
+/test = spl.b
+/test = svc.b
+/test = svs.b
+;===============================================================
+; Define labelname prefix/postfix character
+;	The defined character of this will ignore when analyse the 
+; operand.
+;
+;	/nonlabelchar = Character1  Character2..
+;
+;===============================================================
+/nonlabelchar = #
+;===============================================================
+

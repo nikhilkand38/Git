@@ -1,0 +1,7 @@
+mod,"safety_controller.c/clamp_int","clamp_int It verifies v the value to clamp. min the lower bound (inclusive). max the upper bound (inclusive).",3,1,,,,CPP,,,"",0
+#COMMENT,"@value","@min","@max","safety_controller.c/clamp_int@@"
+,-1,0,10,0,;Verify that when the input value v is below the lower bound (v < min), the function returns the lower bound (min) instead of the original value. This validates the first branch and lower-limit clamping behavior.
+,0,0,10,0,;Validate boundary behavior at the lower limit (v == min). When the value equals the lower bound, it is considered within range, so the function must return the input value unchanged.
+,5,0,10,5,;Validate nominal pass-through for values strictly inside the range. Confirms the else path is taken and the input value is returned unmodified.
+,10,0,10,10,;Validate boundary behavior at the upper limit (v == max). Values equal to the upper bound are considered within range; the function returns the input value unchanged.
+,11,0,10,10,;Verify that when the input value v is above the upper bound (v > max), the function returns the upper bound (max). This validates the second branch and upper-limit clamping.

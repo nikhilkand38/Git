@@ -1,0 +1,2 @@
+"clamp_int.csv",mod,"safety_controller.c/clamp_int",20260308195309,20260308195309,16,0.011742 ms,1,220,7268,,"clamp_int It verifies v the value to clamp. min the lower bound (inclusive). max the upper bound (inclusive).",,,,5,5,0,0,,0
+"SafetyController.csv",mod,"SafetyController",20260308195309,20260308195309,16,0.135866 ms,1,220,81772,,"Safety Controller module verifies sensor-failure priority, overspeed detection (speed > maxSpeed), and nominal pass-through behavior.",,,,9,9,0,0,,0

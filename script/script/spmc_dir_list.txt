@@ -1,0 +1,1 @@
+"C:\winams1\script\cortex_r52_demo_elf\src","C:\winams1\script\cortex_r52_demo_elf_caseviewer\source",0

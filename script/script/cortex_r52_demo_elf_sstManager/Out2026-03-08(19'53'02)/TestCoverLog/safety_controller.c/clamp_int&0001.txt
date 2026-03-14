@@ -1,0 +1,24 @@
+Function name           : safety_controller.c/clamp_int 
+Source file name        : C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.c 
+C0 Coverage rate        : 100%
+C1 Coverage rate        : 100%
+MC/DC Coverage rate     : 100%
+Test time               : 2026/03/08 19:53:08
+
+------ ----- -------- ------   -----------------------------------------
+Un-exe Exec   C1       Count     SOURCE 
+------ ----- -------- ------   -----------------------------------------
+                                }
+                                /* Internal clamp utility to keep values predictable in tests */
+                                static int clamp_int(int value, int min, int max)
+                                {
+         O    T/F         32        if (value< min) {
+                                [MC/DC t/f] value<min
+         O                 1            return min;
+         O    T/F         31        } else if (value > max) {
+                                [MC/DC t/f] value>max
+         O                 1            return max;
+                                    } else {
+         O                30            return value;
+                                    }
+                                }

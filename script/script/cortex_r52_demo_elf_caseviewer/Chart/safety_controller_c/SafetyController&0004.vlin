@@ -1,0 +1,17 @@
+"..\\cortex_r52_demo_elf\\src\\safety_controller.c"
+"SafetyController"	41,84
+	2	42 "SafetyOutput out;"
+	3	53 "selftest_result = SafetyController_SelfTest(sensorOK);"
+	4	54 "(void)selftest_result;"
+	5	57 "spd   = clamp_int(speed,     -1000000, 1000000);"
+	6	58 "limit = clamp_int(maxSpeed,  -1000000, 1000000);"
+	7	59 "tq    = clamp_int(torqueCmd, -1000000, 1000000);"
+	8	62
+	9	63 "out.faultActive = 1;"
+	10	66 "return out;"
+	11	70
+	12	71 "out.faultActive = 1;"
+	13	75
+	14	76 "out.safeSpeed = spd;"
+	15	79 "out.safeSpeed = spd;"
+	16	83 "return out;"

@@ -1,0 +1,12 @@
+^^ SafetyOutput;
+
+
+SafetyOutput SafetyController(int speed, int maxSpeed, int sensorOK, int torqueCmd);
+int SafetyController_SelfTest(int simulatedSensor);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* SAFETY_CONTROLLER_H */
+

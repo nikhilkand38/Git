@@ -1,0 +1,5 @@
+"safety_controller.c" "..\\cortex_r52_demo_elf\\src\\safety_controller.c"
+1	0	6	1	"main" "" "main;..\\cortex_r52_demo_elf\\src\\safety_controller.c"
+1	1	15	1	"clamp_int" "" "clamp_int;..\\cortex_r52_demo_elf\\src\\safety_controller.c"
+1	0	29	1	"SafetyController_SelfTest" "" "SafetyController_SelfTest;..\\cortex_r52_demo_elf\\src\\safety_controller.c"
+1	0	41	1	"SafetyController" "" "SafetyController;..\\cortex_r52_demo_elf\\src\\safety_controller.c"
