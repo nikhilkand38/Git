@@ -1,0 +1,3 @@
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.c
+C:\winams1\script\cortex_r52_demo_elf\src\safety_controller.h
+C:\winams1\script\cortex_r52_demo_elf\src\startup.c

@@ -1,0 +1,156 @@
+
+==============================================================================
+           R CORE WINAMS UNIT TEST SCRIPT 
+==============================================================================
+[Info] Treating input as user source root. Derived CaseViewer project:
+       APP_NAME      : cortex_r52_demo_elf
+       PROJECT_FOLDER: C:\winams1\script\cortex_r52_demo_elf
+
+----------------------------------------------------------------------
+  Project folder : C:\winams1\script\cortex_r52_demo_elf_caseviewer
+  Settings file  : C:\winams1\script\case_player.vopt
+  Source list    : C:\winams1\script\source_path_file.txt
+  SPMC dir list  : C:\winams1\script\spmc_dir_list.txt
+  Build mode     : make
+  Build path     : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\build
+  SST CSV dir    : C:\winams1\script\sst_manager\TestCsv
+  SST CSV file   : demo_func1.csv
+  Settings (.amso): C:\winams1\script\AmsProjSave.amso
+----------------------------------------------------------------------
+
+===================== STEP X.0 HOOK CODE GENERATION WTIH CASECOMMAND =====================
+----------------------------------------------------------------------
+  Project (.vproj) : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+  Settings (.vopt) : C:\winams1\script\case_player.vopt
+  Source list      : C:\winams1\script\source_path_file.txt
+  SPMC dir list    : C:\winams1\script\spmc_dir_list.txt
+----------------------------------------------------------------------
+STEP 1: Create project from settings (skips if project already exists)
+Result : Project already exists. Skipping creation. File: C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+
+----------------------------------------------------------------------
+STEP 2: Set CPU and compiler profile (CortexR52 + armclang)
+Command: CaseCommand.exe -cpucpl CortexR52 armclang C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : CPU/Compiler profile set.
+
+----------------------------------------------------------------------
+STEP 3: Clear registered sources/headers
+Command: CaseCommand.exe -clr C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : Sources cleared.
+
+----------------------------------------------------------------------
+STEP 4: Register sources from list
+Command: CaseCommand.exe -a C:\winams1\script\source_path_file.txt C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : Sources registered from list.
+
+----------------------------------------------------------------------
+STEP 5: Run analysis / create document
+Command: CaseCommand.exe -r C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : Analysis completed / document created.
+
+----------------------------------------------------------------------
+STEP 6: Generate dummy functions for undefined references
+Command: CaseCommand.exe -putdmyfunc C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : Dummy functions generated.
+
+----------------------------------------------------------------------
+STEP 7: Enable hook code flags (SPMC_OUTCODE, SPMC_AUTOCOPY)
+Command: CaseCommand.exe -set_rev "SPMC_OUTCODE=1;SPMC_AUTOCOPY=1" C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : Hook code flags enabled.
+
+----------------------------------------------------------------------
+STEP 8: Mark all files as SPMC targets
+Command: CaseCommand.exe -allspmc C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : All files marked for SPMC.
+
+----------------------------------------------------------------------
+STEP 9: Configure SPMC directory list
+Command: CaseCommand.exe -spmcDir C:\winams1\script\spmc_dir_list.txt C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : SPMC directory list configured.
+
+----------------------------------------------------------------------
+STEP 10: Copy SPMC environment
+Command: CaseCommand.exe -spmcCopy C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj 
+Result : SPMC environment copied.
+
+STEP 5: Run analysis / create document
+Command: CaseCommand.exe -r C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : Analysis completed / document created.
+
+----------------------------------------------------------------------
+STEP 11: Build hook code (m then H)
+Command: CaseCommand.exe -m C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Command: CaseCommand.exe -H C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+Result : Hook code build completed.
+
+----------------------------------------------------------------------
+FINAL: End silent Case session
+Command: CaseCommand.exe -endCP2
+Result : Silent session closed.
+
+================================================================
+----------------------------------------------------------------------
+STEP X.0 Completed: HOOK CODE GENERATION WTIH CASECOMMAND finished
+----------------------------------------------------------------------
+ Project: C:\winams1\script\cortex_r52_demo_elf_caseviewer
+ VProj  : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj
+ Logs   : C:\winams1\script\log_caseviewer
+================================================================
+
+======================================================================
+ STEP X.1: Copy user project into CaseViewer project 
+======================================================================
+Source : C:\winams1\script\cortex_r52_demo_elf
+Target : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf
+
+Copy done.
+Hook Source: C:\winams1\script\cortex_r52_demo_elf_caseviewer\source
+Replacing .c files...
+Replacing .h files...
+Copying winAMS_Spmc* files...
+STEP X.1 Completed.
+======================================================================
+
+======================================================================
+STEP X.2: Build
+  MODE : make
+  PATH : C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\build
+
+make
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -I../src -c ../src/../src/safety_controller.c -o ../src/safety_controller.o
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -I../src -c ../src/../src/startup.c -o ../src/startup.o
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -nostdlib ../src/safety_controller.o ../src/startup.o ../src/winAMS_Spmc.o -Wl,-Map=safety_controller.map -o safety_controller.elf
+[MAKE] Done.
+.elf file Generated Successfully !
+
+======================================================================
+======================================================================
+STEP X.3: SST Manager (AMSCommand)
+  Derived SST project folder : C:\winams1\script\cortex_r52_demo_elf_sstManager
+  Derived .amsy              : C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+  CSV_DIR                    : C:\winams1\script\sst_manager\TestCsv
+  CSV_FILE                   : demo_func1.csv
+  SETTINGS_AMSO              : C:\winams1\script\AmsProjSave.amso
+
+Using ELF: C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\build\safety_controller.elf
+----------------------------------------------------------------------
+STEP X.3.b: Create SST Project Folder
+Command: mkdir "C:\winams1\script\cortex_r52_demo_elf_sstManager"
+Result : SST project folder ready.
+
+----------------------------------------------------------------------
+STEP X.3.c: Prepare TestCsv directory
+Command: mkdir "C:\winams1\script\cortex_r52_demo_elf_sstManager\TestCsv"
+Command: copy "C:\winams1\script\sst_manager\TestCsv\demo_func1.csv" "C:\winams1\script\cortex_r52_demo_elf_sstManager\TestCsv"
+Result : CSV copied to TestCsv
+
+----------------------------------------------------------------------
+STEP X.3.d: Defensive AMS close
+Command: AMSCommand.exe -endAMS
+Result : AMS closed (safe)
+
+----------------------------------------------------------------------
+STEP X.3.e: Import ELF (normal)
+Command: AMSCommand.exe -obj C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\build\safety_controller.elf C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+Terminate batch job (Y/N)? 
+^CThe syntax of the command is incorrect.

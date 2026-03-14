@@ -1,0 +1,13 @@
+
+CMake Error at CMakeLists.txt:3 (project):
+  Running
+
+   'nmake' '-?'
+
+  failed with:
+
+   The system cannot find the file specified
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/DPG_user/Documents/system_health_monitor/build/CMakeFiles/CMakeOutput.log".

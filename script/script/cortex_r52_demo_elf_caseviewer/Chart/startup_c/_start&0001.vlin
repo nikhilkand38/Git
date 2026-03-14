@@ -1,0 +1,5 @@
+"..\\cortex_r52_demo_elf\\src\\startup.c"
+"_start"	2,10
+	2	3 "extern int main(void);"
+	3	4 "main();"
+	4	6

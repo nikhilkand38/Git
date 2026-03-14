@@ -1,0 +1,99 @@
+[HD]
+CASE_B  V1.2
+LINK    0
+[FILE]
+1 "..\cortex_r52_demo_elf\src\safety_controller.c"
+[CLASS]
+D 1,,"SafetyOutput",,"..\cortex_r52_demo_elf\src\safety_controller.h",9,,struct,"SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,,,,7864320,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.h",13,,,,,,,,
+[MEMBER]
+D 1,,"safeSpeed",,"..\cortex_r52_demo_elf\src\safety_controller.h",10,,,"safeSpeed;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",struct,"SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h","int ",,0,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",49,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",64,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",76,,"SafetyController",
+A "..\cortex_r52_demo_elf\src\safety_controller.c",79,,"SafetyController",
+D 1,,"safeTorque",,"..\cortex_r52_demo_elf\src\safety_controller.h",11,,,"safeTorque;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",struct,"SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h","int ",,0,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",50,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",65,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",77,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",80,,"SafetyController",
+D 1,,"faultActive",,"..\cortex_r52_demo_elf\src\safety_controller.h",12,,,"faultActive;SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",struct,"SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h","int ",,0,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",48,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",63,,"SafetyController",1
+A "..\cortex_r52_demo_elf\src\safety_controller.c",71,,"SafetyController",1
+R "..\cortex_r52_demo_elf\src\safety_controller.c",75,,module,"SafetyController",11,0,,,
+[FUNC]
+D 1,,"SafetyController",,"..\cortex_r52_demo_elf\src\safety_controller.c",41,,extern,,,,"struct SafetyOutput ()",,131076,"..\cortex_r52_demo_elf\src\safety_controller.h",16,"SafetyOutput ()"
+D 1,,"SafetyController_SelfTest",,"..\cortex_r52_demo_elf\src\safety_controller.c",29,,extern,,,,"int ()",,131072,"..\cortex_r52_demo_elf\src\safety_controller.h",17,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",53,,module,"SafetyController",33,,,,
+d 1,,"WinAMS_SPMC_Init",,"..\cortex_r52_demo_elf\src\safety_controller.c",3,,extern,,,,"void ()",,131088,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",7,,module,"main",33,,,,
+D 1,,"main",,"..\cortex_r52_demo_elf\src\safety_controller.c",6,,extern,,,,"int ()",,131074,,,
+S 1,,"clamp_int",,"..\cortex_r52_demo_elf\src\safety_controller.c",15,,static,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",,,"int ()",,131072,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",59,,module,"SafetyController",33,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",58,,module,"SafetyController",33,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",57,,module,"SafetyController",33,,,,
+[VAR]
+S 1,,"value",,"..\cortex_r52_demo_elf\src\safety_controller.c",15,,arg,"value;clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",21,,module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",34,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",18,,module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",14,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",16,,module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",12,,,,
+S 1,,"min",,"..\cortex_r52_demo_elf\src\safety_controller.c",15,,arg,"min;clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",17,,module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",34,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",16,,module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",12,,,,
+S 1,,"max",,"..\cortex_r52_demo_elf\src\safety_controller.c",15,,arg,"max;clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",19,,module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",34,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",18,,module,"clamp_int;..\cortex_r52_demo_elf\src\safety_controller.c",14,,,,
+S 1,,"simulatedSensor",,"..\cortex_r52_demo_elf\src\safety_controller.c",29,,arg,"simulatedSensor;SafetyController_SelfTest",module,"SafetyController_SelfTest","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",32,,module,"SafetyController_SelfTest",10,1,,,
+S 1,,"result",,"..\cortex_r52_demo_elf\src\safety_controller.c",30,,auto,"result;SafetyController_SelfTest",module,"SafetyController_SelfTest","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",37,,module,"SafetyController_SelfTest",34,,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",35,,"SafetyController_SelfTest",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",33,,"SafetyController_SelfTest",1
+S 1,,"speed",,"..\cortex_r52_demo_elf\src\safety_controller.c",41,,arg,"speed;SafetyController",module,"SafetyController","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",57,,module,"SafetyController",34,,,,
+S 1,,"maxSpeed",,"..\cortex_r52_demo_elf\src\safety_controller.c",41,,arg,"maxSpeed;SafetyController",module,"SafetyController","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",58,,module,"SafetyController",34,,,,
+S 1,,"sensorOK",,"..\cortex_r52_demo_elf\src\safety_controller.c",41,,arg,"sensorOK;SafetyController",module,"SafetyController","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",62,,module,"SafetyController",26,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",53,,module,"SafetyController",34,,,,
+S 1,,"torqueCmd",,"..\cortex_r52_demo_elf\src\safety_controller.c",41,,arg,"torqueCmd;SafetyController",module,"SafetyController","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",59,,module,"SafetyController",34,,,,
+S 1,,"out",,"..\cortex_r52_demo_elf\src\safety_controller.c",42,,auto,"out;SafetyController",module,"SafetyController","struct SafetyOutput ",,0,,,"SafetyOutput "
+R "..\cortex_r52_demo_elf\src\safety_controller.c",83,,module,"SafetyController",,,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",80,,"SafetyController",
+A "..\cortex_r52_demo_elf\src\safety_controller.c",79,,"SafetyController",
+A "..\cortex_r52_demo_elf\src\safety_controller.c",77,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",76,,"SafetyController",
+R "..\cortex_r52_demo_elf\src\safety_controller.c",75,,module,"SafetyController",37,,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",71,,"SafetyController",1
+R "..\cortex_r52_demo_elf\src\safety_controller.c",66,,module,"SafetyController",,,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",65,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",64,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",63,,"SafetyController",1
+A "..\cortex_r52_demo_elf\src\safety_controller.c",50,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",49,,"SafetyController",0
+A "..\cortex_r52_demo_elf\src\safety_controller.c",48,,"SafetyController",0
+S 1,,"spd",,"..\cortex_r52_demo_elf\src\safety_controller.c",43,,auto,"spd;SafetyController",module,"SafetyController","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",79,,module,"SafetyController",2,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",76,,module,"SafetyController",2,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",70,,module,"SafetyController",14,,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",57,,"SafetyController",
+S 1,,"limit",,"..\cortex_r52_demo_elf\src\safety_controller.c",44,,auto,"limit;SafetyController",module,"SafetyController","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",70,,module,"SafetyController",14,,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",58,,"SafetyController",
+S 1,,"tq",,"..\cortex_r52_demo_elf\src\safety_controller.c",45,,auto,"tq;SafetyController",module,"SafetyController","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",80,,module,"SafetyController",2,,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",59,,"SafetyController",
+S 1,,"selftest_result",,"..\cortex_r52_demo_elf\src\safety_controller.c",46,,auto,"selftest_result;SafetyController",module,"SafetyController","int ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",54,,module,"SafetyController",34,,,,
+A "..\cortex_r52_demo_elf\src\safety_controller.c",53,,"SafetyController",
+[CONST]
+[TYPE]
+D 1,,"SafetyOutput",,"..\cortex_r52_demo_elf\src\safety_controller.h",13,,,"SafetyOutput;..\cortex_r52_demo_elf\src\safety_controller.h",,,"struct SafetyOutput ",,0,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",42,,module,"SafetyController",,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.c",40,,,,,,,,
+R "..\cortex_r52_demo_elf\src\safety_controller.h",16,,,,,,,,
+[ASM]
+[DEFINE]
+D 1,,"SAFETY_CONTROLLER_H",,"..\cortex_r52_demo_elf\src\safety_controller.h",2,,,"SAFETY_CONTROLLER_H;..\cortex_r52_demo_elf\src\safety_controller.h",,,,,,,,

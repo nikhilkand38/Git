@@ -1,0 +1,6 @@
+
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -I../src -c ../src/../src/safety_controller.c -o ../src/safety_controller.o
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -I../src -c ../src/../src/startup.c -o ../src/startup.o
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -I../src -c ../src/../src/winAMS_Spmc.c -o ../src/winAMS_Spmc.o
+arm-none-eabi-gcc -mcpu=cortex-r52 -mfloat-abi=soft -O0 -g3 -ffunction-sections -fdata-sections -fno-builtin -fno-inline -std=c11 -Wall -Wextra -nostdlib ../src/safety_controller.o ../src/startup.o ../src/winAMS_Spmc.o -Wl,-Map=safety_controller.map -o safety_controller.elf
+        1 file(s) copied.

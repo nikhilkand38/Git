@@ -1,0 +1,20 @@
+	@create_target_dll
+start log/all
+on error then continue
+set unit/all
+;@reset
+;set mode source
+
+;direct ignore svc	; SVC -> NOP
+
+
+SET OUTPUT/COMMAND NOWINDOW
+SET OUTPUT/MESSAGE=(INFO, WARN) NOWINDOW
+
+SET CYCLE/CLOCK 300
+assign /read/write/exec 0x0:0xffffffff
+assign 010000H:017fffH
+	enable interrupt/all
+	dir disable interrupt/all
+	direct set cycle 1
+	dir create ..\BIN\WinAMSLite.dll

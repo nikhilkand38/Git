@@ -1,0 +1,4 @@
+
+Command: -crtprojimport C:\winams1\script\AmsProjSave.amso C:\winams1\script\cortex_r52_demo_elf_sstManager
+
+Command: -endAMS

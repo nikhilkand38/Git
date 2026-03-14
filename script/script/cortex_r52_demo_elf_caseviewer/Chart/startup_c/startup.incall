@@ -1,0 +1,2 @@
+"startup.c" "..\\cortex_r52_demo_elf\\src\\startup.c"
+1	0	2	1	"_start" "" "_start;..\\cortex_r52_demo_elf\\src\\startup.c"

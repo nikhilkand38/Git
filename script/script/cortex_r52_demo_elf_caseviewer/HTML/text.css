@@ -1,0 +1,38 @@
+TABLE {
+	width:100%;
+	border-collapse:collapse;
+}
+TD {
+	font:normal normal normal 10pt "Courier";
+	padding:1mm;
+	border:none;
+}
+TD.LineNo {
+	color:rgb(0,0,0);
+	background-color:rgb(213,213,213);
+	vertical-align:top;
+	text-align:right;
+}
+TD.Code {
+	color:rgb(0,0,0);
+	background-color:rgb(255,255,255);
+	text-align:left;
+}
+SPAN.Keyword {
+	color:rgb(0,0,255);
+}
+SPAN.Comment {
+	color:rgb(0,128,0);
+}
+SPAN.Data {
+	color:rgb(255,0,0);
+}
+SPAN.Prepro {
+	color:rgb(0,128,192);
+}
+SPAN.UserKey {
+	color:rgb(255,0,255);
+}
+SPAN.NoCompile {
+	color:rgb(192,192,192);
+}

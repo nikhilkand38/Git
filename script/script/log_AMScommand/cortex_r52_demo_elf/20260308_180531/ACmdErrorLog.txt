@@ -1,0 +1,3 @@
+
+Command: -crtStartupCom C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+AmsCommand-E-COM : [AMS-030003]The command line option is invalid.

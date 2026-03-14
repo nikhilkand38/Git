@@ -1,0 +1,58 @@
+; ===== C:\winams1\script\cortex_r52_demo_elf_sstManager\TestCsv\clamp_int.csv ===== 
+;Log File:	C:\winams1\script\cortex_r52_demo_elf_sstManager\sx.log
+;Start Log:	Sun   8-Mar-2026 19:53:09
+;
+;
+;%XTP-I, Start Sub Process (WinAMSLite.dll)
+;%SX-I-XIPC, function "WinAMS_SPMC_Init" is called by process "WinAMS"
+;returned from WinAMS_SPMC_Init
+;%SX-I-XIPC, function "safety_controller\clamp_int" is called by process "WinAMS"
+;returned from clamp_int
+;%SX-I-XIPC, function "safety_controller\clamp_int" is called by process "WinAMS"
+;returned from clamp_int
+;%SX-I-XIPC, function "safety_controller\clamp_int" is called by process "WinAMS"
+;returned from clamp_int
+;%SX-I-XIPC, function "safety_controller\clamp_int" is called by process "WinAMS"
+;returned from clamp_int
+;%SX-I-XIPC, function "safety_controller\clamp_int" is called by process "WinAMS"
+;returned from clamp_int
+;%winAMS-I-TEST, winAMS: Completed the test.
+exit
+;%SX-I-PROCESS, process "hsnateL" was exited with [0]
+;%SX-I-PROCESS, process "hsnateL" is terminated
+;
+;End   Log:	Sun   8-Mar-2026 19:53:09
+;
+; ===== C:\winams1\script\cortex_r52_demo_elf_sstManager\TestCsv\SafetyController.csv ===== 
+;Log File:	C:\winams1\script\cortex_r52_demo_elf_sstManager\sx.log
+;Start Log:	Sun   8-Mar-2026 19:53:09
+;
+;
+;%XTP-I, Start Sub Process (WinAMSLite.dll)
+;%SX-I-XIPC, function "WinAMS_SPMC_Init" is called by process "WinAMS"
+;returned from WinAMS_SPMC_Init
+;%SX-I-XIPC, function "safety_controller\SafetyController" is called by process "WinAMS"
+;returned from SafetyController
+;%SX-I-XIPC, function "safety_controller\SafetyController" is called by process "WinAMS"
+;returned from SafetyController
+;%SX-I-XIPC, function "safety_controller\SafetyController" is called by process "WinAMS"
+;returned from SafetyController
+;%SX-I-XIPC, function "safety_controller\SafetyController" is called by process "WinAMS"
+;returned from SafetyController
+;%SX-I-XIPC, function "safety_controller\SafetyController" is called by process "WinAMS"
+;returned from SafetyController
+;%SX-I-XIPC, function "safety_controller\SafetyController" is called by process "WinAMS"
+;returned from SafetyController
+;%SX-I-XIPC, function "safety_controller\SafetyController" is called by process "WinAMS"
+;returned from SafetyController
+;%SX-I-XIPC, function "safety_controller\SafetyController" is called by process "WinAMS"
+;returned from SafetyController
+;%SX-I-XIPC, function "safety_controller\SafetyController" is called by process "WinAMS"
+;returned from SafetyController
+;%winAMS-I-TEST, winAMS: Completed the test.
+exit
+;%SX-I-PROCESS, process "hsnateL" was exited with [0]
+;%SX-I-PROCESS, process "hsnateL" is terminated
+;
+;End   Log:	Sun   8-Mar-2026 19:53:10
+;

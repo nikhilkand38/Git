@@ -1,0 +1,3 @@
+mod,"SafetyController","",4,3,,,,CPP,,,"",0
+#COMMENT,"@speed","@maxSpeed","@sensorOK","@torqueCmd","SafetyController@@.safeSpeed","SafetyController@@.safeTorque","SafetyController@@.faultActive"
+,50,100,1,10,50,10,0

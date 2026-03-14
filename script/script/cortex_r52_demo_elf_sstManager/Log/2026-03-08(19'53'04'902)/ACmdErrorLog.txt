@@ -1,0 +1,66 @@
+
+Command: -obj C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\build\safety_controller.elf C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Starting to convert. 
+
+
+  Initialization...
+
+  Converting Header Information...
+
+  Converting Unit Information........
+
+  Converting Section Information........
+
+  Converting Debug Information.......
+
+  Ending Process...
+
+  Complete to convert OMF. Output number of debug file(5) number of debug symbol(71) 
+
+Command: -objspmc C:\winams1\script\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf\build\safety_controller.elf C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Starting to convert. 
+
+
+  Initialization...
+
+  Converting Header Information...
+
+  Converting Unit Information........
+
+  Converting Section Information........
+
+  Converting Debug Information.......
+
+  Ending Process...
+
+  Complete to convert OMF. Output number of debug file(5) number of debug symbol(71) 
+
+Command: -iendaddr main C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Command: -iendaddrspmc main C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Command: -crtStartupCom C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Command: -set_system_g Cp2Proj=..\cortex_r52_demo_elf_caseviewer\cortex_r52_demo_elf_caseviewer.vproj C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Command: -set_system_g Start=.\SS_STARTUP.txt C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Command: -set_system_g2spm C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Command: -set_test2spm C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Command: -set_test InDir=C:\winams1\script\cortex_r52_demo_elf_sstManager\TestCsv C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Command: -b -all C:\winams1\script\cortex_r52_demo_elf_sstManager\cortex_r52_demo_elf_sstManager.amsy
+
+Object with hook code test started 
+winAMS: Completed the test.
+winAMS: Completed the test.
+Result: OK
+Object with hook code test ended 
+
+Simulator LogFile: C:\winams1\script\cortex_r52_demo_elf_sstManager\Log\2026-03-08(19'53'04'902)\T1\sx.log 
+
+Command: -endAMS
